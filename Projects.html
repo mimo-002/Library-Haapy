@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>المنتجات | Happy Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><span class="brand-mark">H</span><span>Happy</span></a>
+  <nav><a href="index.html">الرئيسية</a><a class="active" href="Projects.html">المنتجات</a></nav>
+  <a class="nav-cta" href="index.html">الرئيسية <span>←</span></a>
+</header>
+
+<main class="products-page">
+<section class="products-hero">
+  <div>
+    <span class="mini-label">🛍️ عالم Happy</span>
+    <h1>اختار لعبتك، هديتك<br><span>أو أدواتك المفضلة!</span></h1>
+    <p>كل الأقسام في مكان واحد — والحركة تبدأ أول ما تحرك الماوس 😍</p>
+  </div>
+  <div class="floating-emoji">🧸</div>
+  <div class="floating-emoji e2">🎁</div><div class="floating-emoji e3">🧩</div>
+</section>
+
+<div class="filter-bar" id="filterBar">
+  <button class="filter active" data-filter="all">✨ الكل</button>
+  <button class="filter" data-filter="toys">🧸 ألعاب</button>
+  <button class="filter" data-filter="school">✏️ مدرسة</button>
+  <button class="filter" data-filter="gifts">🎁 هدايا</button>
+  <button class="filter" data-filter="party">🎉 حفلات</button>
+  <button class="filter" data-filter="accessories">💎 إكسسوارات</button>
+</div>
+
+<div id="catalog"></div>
+</main>
+
+<div class="quick-view" id="quickView" aria-hidden="true">
+  <div class="quick-box">
+    <button class="close" id="closeView">×</button>
+    <div id="quickEmoji" class="quick-emoji">🧸</div>
+    <span id="quickTag" class="mini-label">منتج</span>
+    <h2 id="quickTitle">منتج</h2>
+    <p>اختيار جميل من Happy ✨ اضغط تواصل لمعرفة التفاصيل والسعر والتوفر.</p>
+    <a class="btn btn-primary" href="https://wa.me/201019890771" target="_blank" rel="noopener">💬 اسأل عن المنتج</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand"><span class="brand-mark">H</span><b>Happy Library</b></div>
+  <p>الفرحة تبدأ باختيار صغير ✨</p>
+  <a href="index.html">العودة للرئيسية</a>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
